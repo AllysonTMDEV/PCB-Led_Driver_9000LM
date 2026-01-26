@@ -1,0 +1,33 @@
+Referencia,Quantidade,Valor,Descricao,Footprint,LCSC,Preco Unit USD,Preco Total USD
+U$1,1,A6211,Driver LED Buck Constante,SOIC-8,C131379,0.85,0.85
+U (ATtiny45),1,ATtiny45-20SU,Microcontrolador 8-bit,SOIC-8,C14259,1.50,1.50
+U$13,1,RT9068-3.3V,Regulador LDO 3.3V,SOT-23-5,C47779,0.25,0.25
+U$3,1,NR8040T100M,Indutor 10uH 3A,8x8mm,C96076,0.45,0.45
+R1,1,0.01R 3W,Resistor Sense 10A (ATUALIZADO),2512,C2933871,0.20,0.20
+R2,1,140K,Resistor SMD,0805,C17437,0.01,0.01
+R4,1,10K,Resistor SMD,0805,C17414,0.01,0.01
+R6,1,15K 1/5W,Resistor SMD,0805,C17420,0.01,0.01
+R8,1,300K,Resistor SMD,0805,C17745,0.01,0.01
+R9,1,3.3K,Resistor SMD,0805,C17634,0.01,0.01
+C1,1,0.1uF,Capacitor Ceramico,0805,C49678,0.02,0.02
+C3,1,47uF 63V,Capacitor Eletrolitico,6.3x7.7mm,C3343,0.35,0.35
+C4,1,4.7uF 80V,Capacitor Ceramico,1210,C92917,0.25,0.25
+C5,1,0.1uF,Capacitor Ceramico,0805,C49678,0.02,0.02
+C6,1,1.0uF,Capacitor Ceramico,0805,C28323,0.02,0.02
+C7,1,NP,Nao Popular,-,-,0.00,0.00
+C8,1,0.1uF,Capacitor Ceramico,0805,C49678,0.02,0.02
+C9,1,0.18uF 50V,Capacitor Ceramico,0805,C1783,0.02,0.02
+D1,1,B560A-13-F,Diodo Schottky 5A 60V,SMA,C85099,0.10,0.10
+D2,1,BAT54,Diodo Schottky Sinal,SOT-23,C47521,0.03,0.03
+R5,1,10K NTC,Termistor NTC,0805,C149705,0.05,0.05
+R7,1,Snubber,Rede Snubber RC,-,-,0.10,0.10
+J1,1,AVR_SPI_PRG_6PTH,Conector Programacao 6 pinos,2x3 P2.54mm,C429959,0.30,0.30
+SIGNAL_HV,1,Conn 3P,Conector Entrada VIN/GND/SIGNAL,P2.54mm,C49257,0.20,0.20
+LED+/LED-,1,Conn 2P,Conector Saida LED,P2.54mm,C8465,0.15,0.15
+,,,,,,TOTAL:,4.93
+
+NOTAS:
+- R1 (Resistor Sense) ATUALIZADO de 0.082R para 0.01R 3W para 10A
+- Formula: I = 0.1V / Rs = 0.1V / 0.01R = 10A
+- Potencia dissipada em R1: P = I² x R = 100 x 0.01 = 1W (usar 3W para margem)
+- Indutor pode precisar upgrade para 10A (atual 3A) - verificar aquecimento

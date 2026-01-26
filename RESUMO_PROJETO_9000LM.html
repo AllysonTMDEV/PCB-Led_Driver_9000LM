@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>PROJETO LED DRIVER 9000 LUMENS - RESUMO</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #1a1a2e; color: #eee; }
+        h1 { color: #00d4ff; text-align: center; border-bottom: 3px solid #00d4ff; padding-bottom: 10px; }
+        h2 { color: #00ff88; margin-top: 25px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; background: #16213e; }
+        th, td { padding: 10px; text-align: left; border: 1px solid #0f3460; }
+        th { background: #0f3460; color: #00d4ff; }
+        .ok { color: #00ff88; font-weight: bold; }
+        .total { background: #0f3460; font-weight: bold; color: #00d4ff; }
+        .card { background: #16213e; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #00d4ff; }
+        .formula { background: #0a0a1a; padding: 15px; border-radius: 5px; font-family: monospace; text-align: center; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <h1>PROJETO LED DRIVER 9000 LUMENS</h1>
+    
+    <div class="card">
+        <h2>ARQUIVOS DO PROJETO</h2>
+        <table>
+            <tr><th>Arquivo</th><th>Descricao</th></tr>
+            <tr><td>LED_KICAD_SS34.kicad_pcb</td><td>Placa LED com diodos SS34</td></tr>
+            <tr><td>PLACA DRIVER RSENSE 10A.kicad_sch</td><td>Esquematico Driver 10A</td></tr>
+            <tr><td>PLACA DRIVER RSENSE 10A.kicad_pcb</td><td>PCB Driver 10A</td></tr>
+            <tr><td>BOM_PLACA_LED_9000LM.csv</td><td>Lista de Materiais - Placa LED</td></tr>
+            <tr><td>BOM_PLACA_DRIVER_10A.csv</td><td>Lista de Materiais - Placa Driver</td></tr>
+        </table>
+    </div>
+
+    <h2>PLACA LED - BOM</h2>
+    <table>
+        <tr><th>Ref</th><th>Qtd</th><th>Valor</th><th>LCSC</th><th>Preco</th></tr>
+        <tr><td>LED1-LED20</td><td>20</td><td>JH-3535W12G 450lm</td><td>C2290043</td><td>$7.00</td></tr>
+        <tr><td>D1-D21</td><td>21</td><td>SS34 3A</td><td>C8678</td><td>$1.05</td></tr>
+        <tr><td>J1</td><td>1</td><td>Conector 2P</td><td>C8465</td><td>$0.15</td></tr>
+        <tr class="total"><td colspan="4">TOTAL PLACA LED</td><td>$8.20</td></tr>
+    </table>
+
+    <h2>PLACA DRIVER 10A - BOM</h2>
+    <table>
+        <tr><th>Ref</th><th>Qtd</th><th>Valor</th><th>LCSC</th><th>Preco</th></tr>
+        <tr><td>U$1</td><td>1</td><td>A6211 Driver LED</td><td>C131379</td><td>$0.85</td></tr>
+        <tr><td>U</td><td>1</td><td>ATtiny45-20SU</td><td>C14259</td><td>$1.50</td></tr>
+        <tr><td>U$13</td><td>1</td><td>RT9068-3.3V LDO</td><td>C47779</td><td>$0.25</td></tr>
+        <tr><td>U$3</td><td>1</td><td>Indutor 10uH</td><td>C96076</td><td>$0.45</td></tr>
+        <tr style="background:#1a4d1a;"><td>R1</td><td>1</td><td><strong>0.01R 3W (NOVO)</strong></td><td>C2933871</td><td>$0.20</td></tr>
+        <tr><td>Resistores</td><td>6</td><td>Diversos</td><td>-</td><td>$0.06</td></tr>
+        <tr><td>Capacitores</td><td>8</td><td>Diversos</td><td>-</td><td>$0.72</td></tr>
+        <tr><td>D1</td><td>1</td><td>B560A-13-F 5A</td><td>C85099</td><td>$0.10</td></tr>
+        <tr><td>D2</td><td>1</td><td>BAT54</td><td>C47521</td><td>$0.03</td></tr>
+        <tr><td>Conectores</td><td>3</td><td>Diversos</td><td>-</td><td>$0.65</td></tr>
+        <tr class="total"><td colspan="4">TOTAL PLACA DRIVER</td><td>$4.93</td></tr>
+    </table>
+
+    <div class="card">
+        <h2>CALCULO DE CORRENTE</h2>
+        <div class="formula">
+            I = 0.1V / R<sub>SENSE</sub> = 0.1V / 0.01Ω = <strong>10A</strong>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>CALCULO DE LUMENS</h2>
+        <div class="formula">
+            Lumens = 20 LEDs × 450 lm = <strong>9000 LUMENS</strong>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>CUSTO TOTAL DO PROJETO</h2>
+        <table>
+            <tr><td>Placa LED</td><td>$8.20</td></tr>
+            <tr><td>Placa Driver</td><td>$4.93</td></tr>
+            <tr><td>Fabricacao PCB (estimado)</td><td>$5.00</td></tr>
+            <tr class="total"><td>TOTAL</td><td>$18.13</td></tr>
+        </table>
+    </div>
+
+    <div class="card" style="border-left-color: #00ff88;">
+        <h2 class="ok">STATUS: PRONTO PARA FABRICACAO</h2>
+        <ul>
+            <li class="ok">Placa LED: 21 diodos SS34 configurados</li>
+            <li class="ok">Placa Driver: Resistor sense 0.01R para 10A</li>
+            <li class="ok">BOMs gerados para compra de componentes</li>
+        </ul>
+    </div>
+
+</body>
+</html>

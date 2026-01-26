@@ -1,0 +1,12 @@
+Referencia,Quantidade,Valor,Descricao,Footprint,LCSC,Preco Unit USD,Preco Total USD
+LED1-LED20,20,JH-3535W12G,LED SMD 3535 Branco 450lm 0.5A,3535,C2290043,0.35,7.00
+D1-D21,21,SS34,Diodo Schottky 3A 40V,SMA,C8678,0.05,1.05
+J1,1,Conn 2P,Conector Entrada LED+ LED-,P2.54mm,C8465,0.15,0.15
+,,,,,,TOTAL:,8.20
+
+NOTAS:
+- LEDs: JH-3535W12G ou equivalente 450 lumens 3V 0.5A
+- Diodos SS34: Schottky 3A 40V (margem 6x sobre 0.5A por LED)
+- Total de lumens: 20 x 450 = 9000 lumens
+- Corrente total: 20 x 0.5A = 10A
+'1
