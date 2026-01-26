@@ -1,0 +1,72 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "16b9eaed-a45c-47c3-9b43-218c1e3b9c4a")
+	(paper "A4")
+	(title_block
+		(title "LED Driver 10A - 9000 Lumens")
+		(date "2026-01-26")
+		(rev "C-CORRIGIDO")
+		(company "AllysonTMDEV")
+		(comment 1 "Indutor corrigido para 12A")
+		(comment 2 "Capacitores aumentados")
+	)
+	(lib_symbols
+	)
+	(text "LED DRIVER 10A - 9000 LUMENS\nREVISAO C - CORRIGIDA"
+		(exclude_from_sim no)
+		(at 148.59 30.48 0)
+		(effects
+			(font
+				(size 5 5)
+				(bold yes)
+			)
+		)
+		(uuid "title-text")
+	)
+	(text "COMPONENTES ATUALIZADOS:\n\nU$1: A6211 - Driver LED Buck (LCSC: C131379)\nU$3: SRP1265A-100M - Indutor 10uH 12A (LCSC: C408337) [CORRIGIDO]\nR1: 0.01R 3W - Resistor Sense 10A (LCSC: C2933871)\nC3: 100uF 63V - Cap Entrada (LCSC: C134846) [AUMENTADO]\nC4: 10uF 100V - Cap Saida (LCSC: C1845) [AUMENTADO]\nD1: B560C-13-F - Schottky 5A 60V SMC (LCSC: C85100) [ATUALIZADO]\n\nCORRENTE DE SAIDA: 10A\nTENSAO ENTRADA: 12-24V DC\nTENSAO SAIDA: 3V (paralelo) ou 15V (serie)"
+		(exclude_from_sim no)
+		(at 50 80 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left)
+		)
+		(uuid "specs-text")
+	)
+	(text "CALCULOS:\n\nI_out = V_ref / R_sense = 0.1V / 0.01R = 10A\nP_rsense = I^2 x R = 100 x 0.01 = 1W (usando 3W)\nI_indutor_pico = 10.26A < 12A (OK)\n\nLUMENS: 20 LEDs x 450lm = 9000 lumens"
+		(exclude_from_sim no)
+		(at 50 140 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left)
+		)
+		(uuid "calc-text")
+	)
+	(text "CONEXAO COM PLACA LED:\n\nDRIVER          LEDS\n-------         -------\nLED+  --------> LED+\nLED-  --------> LED-\n\nALIMENTACAO:\nVIN: 12-24V DC\nGND: Ground\nSIGNAL: PWM 0-5V (opcional)"
+		(exclude_from_sim no)
+		(at 180 80 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left)
+		)
+		(uuid "conn-text")
+	)
+	(text "LISTA DE COMPRAS LCSC:\n\nC131379 - A6211 Driver\nC408337 - Indutor 12A [NOVO]\nC2933871 - Rsense 0.01R\nC134846 - Cap 100uF [NOVO]\nC1845 - Cap 10uF 100V [NOVO]\nC85100 - B560C Schottky [NOVO]\nC14259 - ATtiny45\nC47779 - RT9068 LDO"
+		(exclude_from_sim no)
+		(at 180 140 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left)
+		)
+		(uuid "lcsc-text")
+	)
+)

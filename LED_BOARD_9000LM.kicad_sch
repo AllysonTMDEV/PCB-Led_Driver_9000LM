@@ -1,0 +1,72 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "26b9eaed-b45c-57c3-9b43-318c1e3b9c4b")
+	(paper "A4")
+	(title_block
+		(title "LED Board - 9000 Lumens")
+		(date "2026-01-26")
+		(rev "C")
+		(company "AllysonTMDEV")
+		(comment 1 "20 LEDs x 450lm = 9000 lumens")
+		(comment 2 "Diodos bypass SS34")
+	)
+	(lib_symbols
+	)
+	(text "PLACA LED 9000 LUMENS"
+		(exclude_from_sim no)
+		(at 148.59 30.48 0)
+		(effects
+			(font
+				(size 5 5)
+				(bold yes)
+			)
+		)
+		(uuid "title-led")
+	)
+	(text "COMPONENTES:\n\nLED1-LED20: JH-3535W12G\n  - 20 unidades\n  - 450 lumens cada @ 0.5A\n  - 3V forward voltage\n  - Footprint: 3535\n  - LCSC: C2290043\n\nD1-D20: SS34 Schottky\n  - 20 unidades\n  - 3A 40V\n  - Funcao: Bypass protection\n  - Footprint: SMA\n  - LCSC: C8678\n\nJ1: Conector 2P\n  - LED+ / LED-\n  - LCSC: C8465"
+		(exclude_from_sim no)
+		(at 50 80 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left)
+		)
+		(uuid "comp-led")
+	)
+	(text "CONFIGURACAO ELETRICA:\n\nOPCAO A - PARALELO (Atual):\n  LED1 ---|>|--- GND\n  LED2 ---|>|--- GND\n  ...     |>|\n  LED20---|>|--- GND\n  \n  Tensao: 3V\n  Corrente: 10A total (0.5A x 20)\n\nOPCAO B - SERIE/PARALELO:\n  String1: LED1-LED5 em serie (15V)\n  String2: LED6-LED10 em serie\n  String3: LED11-LED15 em serie\n  String4: LED16-LED20 em serie\n  \n  4 strings em paralelo\n  Tensao: 15V\n  Corrente: 2.5A x 4 = 10A total"
+		(exclude_from_sim no)
+		(at 180 80 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left)
+		)
+		(uuid "config-led")
+	)
+	(text "DIODOS BYPASS:\n\nCada LED tem um SS34 em paralelo reverso:\n\n     LED+\n      |\n   |--+--|  \n   |     |\n  LED   SS34\n   |     |\n   |--+--|\n      |\n     LED-\n\nSe LED falhar ABERTO:\n  - Diodo conduz\n  - Circuito continua\n  - Demais LEDs funcionam"
+		(exclude_from_sim no)
+		(at 50 160 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left)
+		)
+		(uuid "bypass-led")
+	)
+	(text "DISSIPACAO TERMICA:\n\nPotencia por LED: 3V x 0.5A = 1.5W\nPotencia total: 30W\n\nREQUISITOS:\n- PCB aluminio (MCPCB) recomendado\n- Pasta termica Arctic MX-4\n- Dissipador Rth < 1.5 C/W\n- Temp. ambiente max: 40C\n\nLISTA LCSC:\nC2290043 x 20 - LEDs\nC8678 x 20 - Diodos\nC8465 x 1 - Conector"
+		(exclude_from_sim no)
+		(at 180 160 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left)
+		)
+		(uuid "thermal-led")
+	)
+)
