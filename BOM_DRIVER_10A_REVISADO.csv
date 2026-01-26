@@ -1,0 +1,39 @@
+Referencia,Quantidade,Valor,Descricao,Footprint,LCSC,Preco Unit USD,Preco Total USD,STATUS
+U$1,1,A6211,Driver LED Buck Constante,SOIC-8,C131379,0.85,0.85,OK
+U (ATtiny45),1,ATtiny45-20SU,Microcontrolador 8-bit,SOIC-8,C14259,1.50,1.50,OK
+U$13,1,RT9068-3.3V,Regulador LDO 3.3V,SOT-23-5,C47779,0.25,0.25,OK
+U$3,1,SRP1265A-100M,Indutor 10uH 12A (CORRIGIDO),12.5x12.5mm,C408337,1.20,1.20,ATUALIZADO
+R1,1,0.01R 3W,Resistor Sense 10A,2512,C2933871,0.20,0.20,OK
+R2,1,140K,Resistor SMD,0805,C17437,0.01,0.01,OK
+R4,1,10K,Resistor SMD,0805,C17414,0.01,0.01,OK
+R6,1,15K 1/5W,Resistor SMD,0805,C17420,0.01,0.01,OK
+R8,1,300K,Resistor SMD,0805,C17745,0.01,0.01,OK
+R9,1,3.3K,Resistor SMD,0805,C17634,0.01,0.01,OK
+C1,1,0.1uF,Capacitor Ceramico,0805,C49678,0.02,0.02,OK
+C3,1,100uF 63V,Capacitor Eletrolitico (AUMENTADO),8x10mm,C134846,0.55,0.55,ATUALIZADO
+C4,1,10uF 100V,Capacitor Ceramico (AUMENTADO),1210,C1845,0.35,0.35,ATUALIZADO
+C5,1,0.1uF,Capacitor Ceramico,0805,C49678,0.02,0.02,OK
+C6,1,1.0uF,Capacitor Ceramico,0805,C28323,0.02,0.02,OK
+C7,1,NP,Nao Popular,-,-,0.00,0.00,OK
+C8,1,0.1uF,Capacitor Ceramico,0805,C49678,0.02,0.02,OK
+C9,1,0.18uF 50V,Capacitor Ceramico,0805,C1783,0.02,0.02,OK
+D1,1,B560C-13-F,Diodo Schottky 5A 60V (ATUALIZADO),SMC,C85100,0.15,0.15,ATUALIZADO
+D2,1,BAT54,Diodo Schottky Sinal,SOT-23,C47521,0.03,0.03,OK
+R5,1,10K NTC,Termistor NTC,0805,C149705,0.05,0.05,OK
+R7,1,Snubber 100R+100nF,Rede Snubber RC,0805+0805,-,0.10,0.10,OK
+J1,1,AVR_SPI_PRG_6PTH,Conector Programacao 6 pinos,2x3 P2.54mm,C429959,0.30,0.30,OK
+SIGNAL_HV,1,Conn 3P,Conector Entrada VIN/GND/SIGNAL,P2.54mm,C49257,0.20,0.20,OK
+LED+/LED-,1,Conn 2P,Conector Saida LED,P2.54mm,C8465,0.15,0.15,OK
+,,,,,,TOTAL:,6.63,
+
+ALTERACOES REALIZADAS:
+1. INDUTOR: NR8040T100M (3A) -> SRP1265A-100M (12A) - CRITICO para 10A
+2. C3: 47uF -> 100uF 63V - Maior capacitancia para ripple
+3. C4: 4.7uF 80V -> 10uF 100V - Maior margem de tensao e capacitancia
+4. D1: B560A -> B560C (package SMC maior para dissipacao)
+
+CALCULOS DE VERIFICACAO:
+- Corrente de saida: I = 0.1V / R_sense = 0.1V / 0.01R = 10A
+- Potencia no Rsense: P = I^2 x R = 100 x 0.01 = 1W (usando 3W OK)
+- Indutor saturacao: 12A > 10A (margem 20% OK)
+- Tensao entrada: 12-24V DC (recomendado 24V para 20 LEDs em serie)

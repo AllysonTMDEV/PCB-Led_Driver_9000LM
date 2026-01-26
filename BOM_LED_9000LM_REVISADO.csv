@@ -1,0 +1,41 @@
+Referencia,Quantidade,Valor,Descricao,Footprint,LCSC,Preco Unit USD,Preco Total USD,STATUS
+LED1-LED20,20,CREE XHP50.2,LED High Power 500lm+ 3V 1A,5050,C2976893,0.85,17.00,UPGRADE RECOMENDADO
+D1-D20,20,SS34,Diodo Schottky Bypass 3A 40V,SMA,C8678,0.05,1.00,OK
+J1,1,Conn 2P,Conector Entrada LED+ LED-,P2.54mm,C8465,0.15,0.15,OK
+THERMAL,1,Pasta Termica,Arctic MX-4 ou similar,-,-,2.00,2.00,ADICIONAR
+MCPCB,1,Metal Core PCB,Placa aluminio 1.5mm,-,-,5.00,5.00,RECOMENDADO
+,,,,,,TOTAL:,25.15,
+
+CONFIGURACAO PARA 9000+ LUMENS:
+
+OPCAO A - 20 LEDs em paralelo (atual):
+- LED: JH-3535W12G 450lm @ 0.5A x 20 = 9000 lumens
+- Corrente total: 10A
+- Tensao: 3V (todos em paralelo)
+- Tensao driver: 12V entrada, 3V saida
+- PROBLEMA: Diodos SS34 para bypass OK
+
+OPCAO B - LEDs em serie/paralelo (RECOMENDADO):
+- 4 strings de 5 LEDs em serie
+- Cada string: 5 x 3V = 15V
+- Corrente por string: 2.5A
+- Tensao driver: 24V entrada, 15V saida
+- VANTAGEM: Menor corrente, maior eficiencia
+
+OPCAO C - High Power (MAXIMO DESEMPENHO):
+- 20x CREE XHP50.2 @ 500lm = 10000+ lumens
+- Corrente: 0.5A por LED = 10A total
+- Requer MCPCB (Metal Core PCB) para dissipacao
+
+NOTAS TERMICAS:
+- Potencia total LEDs: 20 x 3V x 0.5A = 30W
+- Dissipacao minima: 30W / (20 LEDs) = 1.5W por LED
+- Temperatura maxima juncao: 125C (tipico)
+- Usar pasta termica entre PCB e dissipador
+- Dissipador recomendado: 1.5 C/W ou melhor
+
+DIODOS BYPASS (SS34):
+- Funcao: Se um LED falhar aberto, o diodo conduz
+- Corrente: 0.5A por diodo (SS34 suporta 3A - OK)
+- Tensao reversa: 40V > 3V LED (OK)
+- Quantidade correta: 20 diodos para 20 LEDs
