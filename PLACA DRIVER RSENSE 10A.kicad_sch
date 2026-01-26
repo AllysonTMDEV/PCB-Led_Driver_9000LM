@@ -1563,7 +1563,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "Placa_Driver_Alpha_2026:SMA"
+			(property "Footprint" "Placa_Driver_Alpha_2026:SMC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -17191,7 +17191,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "10uH"
+		(property "Value" "SRP1265A-100M 10uH 12A"
 			(at 215.9 35.56 0)
 			(effects
 				(font
@@ -17596,7 +17596,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "4.7uF 80V"
+		(property "Value" "10uF 100V"
 			(at 103.124 58.039 0)
 			(effects
 				(font
@@ -19789,7 +19789,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "47uF 63V"
+		(property "Value" "100uF 63V"
 			(at 84.836 57.531 0)
 			(effects
 				(font
@@ -20005,7 +20005,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Placa_Driver_Alpha_2026:SMA"
+		(property "Footprint" "Placa_Driver_Alpha_2026:SMC"
 			(at 200.66 60.96 0)
 			(effects
 				(font

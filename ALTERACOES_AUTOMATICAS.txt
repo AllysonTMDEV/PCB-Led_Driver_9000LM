@@ -1,0 +1,33 @@
+============================================================
+RELATORIO DE ALTERACOES AUTOMATICAS
+Data: 2026-01-26 11:20:49
+============================================================
+
+SCHEMATIC:
+----------------------------------------
+  [OK] Indutor: Value atualizado para SRP1265A-100M 10uH 12A
+  [OK] C3: Value atualizado para 100uF 63V
+  [OK] C4: Value atualizado para 10uF 100V
+  [OK] D1: Footprint atualizado para SMC
+
+PCB:
+----------------------------------------
+  [PENDENTE] Atualizar PCB via KiCad (F8)
+  [PENDENTE] Reposicionar indutor maior
+  [PENDENTE] Verificar D1 footprint SMC
+
+
+COMPONENTES ATUALIZADOS:
+----------------------------------------
+  Indutor: NR8040T100M (3A) -> SRP1265A-100M (12A)
+  C3: 47uF 63V -> 100uF 63V
+  C4: 4.7uF 80V -> 10uF 100V
+  D1: Footprint SMA -> SMC
+
+
+CODIGOS LCSC PARA COMPRA:
+----------------------------------------
+  C408337 - Indutor SRP1265A-100M 10uH 12A
+  C134846 - Capacitor 100uF 63V
+  C1845   - Capacitor 10uF 100V
+  C85100  - Diodo B560C SMC
