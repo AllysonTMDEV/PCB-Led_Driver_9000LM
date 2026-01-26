@@ -115,7 +115,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "4.7uF 80V"
+		(property "Value" "10uF 100V"
 			(at -1.905 3.175 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -451,7 +451,7 @@
 			(at -0.9 3.7 90)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "449ed888-84e0-48b5-8878-bdf175984111")
+			(uuid "c85bfaa9-7243-417d-aaa5-c1280ca81cd8")
 			(effects
 				(font
 					(size 0.560832 0.560832)
@@ -460,11 +460,11 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "10uH"
+		(property "Value" "SRP1265A-100M 10uH 12A"
 			(at 1.6 3.7 90)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "ce9b0ac7-1c26-412b-a29a-c056f761e66b")
+			(uuid "2992a4e8-d92f-47a7-806e-64bd7d068d81")
 			(effects
 				(font
 					(size 0.560832 0.560832)
@@ -477,7 +477,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d01b4922-6546-411a-b235-0fafe6892189")
+			(uuid "6487c551-4bf4-4795-af8b-432cb699e2a7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -489,7 +489,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e5a043d9-80f7-4e1f-9657-7f4c5456e2fc")
+			(uuid "18fdd9c4-2749-4db0-be99-364838f74f6c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3221,7 +3221,7 @@
 		(uuid "4146cb18-a337-45df-9347-bb1d359395ad")
 		(at 139.7761 108.3536 90)
 		(property "Reference" "SJ1"
-			(at -0.908 1.27 -90)
+			(at -0.908 1.27 270)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "65c61426-6a82-4c0a-a07c-4d5079b89422")
@@ -3234,7 +3234,7 @@
 			)
 		)
 		(property "Value" "JUMPER-PAD-2-NO"
-			(at -0.908 -1.651 -90)
+			(at -0.908 -1.651 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "e2c167bf-3e20-4199-bcb0-44a2ce12c4b1")
@@ -3247,7 +3247,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "f5634f14-27a8-4acb-9701-40acaf8bca9d")
@@ -3260,7 +3260,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "a2d055da-d049-451c-bac3-e4189ac90f74")
@@ -3967,7 +3967,7 @@
 		(at 146.7011 113.4036 90)
 		(descr "CAPACITOR")
 		(property "Reference" "C8"
-			(at -0.935 0.635 -90)
+			(at -0.935 0.635 270)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "adefce13-ce42-4933-8c88-3656270b6784")
@@ -3980,7 +3980,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at -0.935 -1.105 -90)
+			(at -0.935 -1.105 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "957efeae-7e92-47eb-89d5-8106a8992c86")
@@ -3993,7 +3993,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "58f04eee-7a51-4525-a260-343c82f5df8e")
@@ -4006,7 +4006,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "a1401cb0-556e-4465-b8ae-86b5aada78a3")
@@ -4142,7 +4142,7 @@
 		(at 157.1511 96.1536 90)
 		(descr "CAPACITOR")
 		(property "Reference" "C6"
-			(at -0.635 0.635 -90)
+			(at -0.635 0.635 270)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "2eca364d-13fd-4778-aa38-8f40f92a765f")
@@ -4155,7 +4155,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at -0.635 -1.27 -90)
+			(at -0.635 -1.27 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "421174bc-0fd0-4556-aefa-fd76e0bc1ed8")
@@ -4168,7 +4168,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "800540f1-d466-41d2-9641-c6405341ead7")
@@ -4181,7 +4181,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "ffd67eec-dc5b-442f-a05b-651159cf586d")
@@ -4317,7 +4317,7 @@
 		(at 146.7011 110.6036 90)
 		(descr "RESISTOR")
 		(property "Reference" "R9"
-			(at -0.889 0.635 -90)
+			(at -0.889 0.635 270)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "f3cbf645-1aef-430d-ae7a-55d33846522d")
@@ -4330,7 +4330,7 @@
 			)
 		)
 		(property "Value" "3.3K 1%"
-			(at -0.889 -1.016 -90)
+			(at -0.889 -1.016 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "2417fa56-3150-4be0-9032-12a68cfad21d")
@@ -4343,7 +4343,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "97d34983-c7f1-4891-9a30-d1e71336b503")
@@ -4356,7 +4356,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "650ca693-05d7-4ef2-aee8-8fa06454dfab")
@@ -4978,7 +4978,7 @@
 		(uuid "ddbb70e8-a7ca-4714-a0b2-2f833994d4f6")
 		(at 141.544428 99.056588 -90)
 		(property "Reference" "C3"
-			(at -0.762 1.651 -90)
+			(at -0.762 1.651 270)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "8cf12d6f-febe-4502-9fd1-84dbdc2493f2")
@@ -4990,8 +4990,8 @@
 				(justify right top mirror)
 			)
 		)
-		(property "Value" "47uF 63V"
-			(at -1.905 -4.318 -90)
+		(property "Value" "100uF 63V"
+			(at -1.905 -4.318 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "1220aef2-4ec2-430e-aa42-fd904154ae05")
@@ -5277,7 +5277,7 @@
 		(at 146.7011 107.7036 90)
 		(descr "RESISTOR")
 		(property "Reference" "R4"
-			(at -0.889 0.635 -90)
+			(at -0.889 0.635 270)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "2cfe1ade-bf2f-443f-9fbd-00b76c7b8452")
@@ -5290,7 +5290,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at -0.889 -1.016 -90)
+			(at -0.889 -1.016 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "493a2619-d587-4e70-90e4-d0e8da4656b1")
@@ -5303,7 +5303,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "e1ebb065-35f6-4034-a809-69a6757bb5ed")
@@ -5316,7 +5316,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "bd6e23e5-6a5e-456e-9ce4-bae171a53243")
