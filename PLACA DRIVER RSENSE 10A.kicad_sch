@@ -17378,69 +17378,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Placa_Driver_Alpha_2026-eagle-import:FRAME-BLUEROBOTICS")
-		(at 167.64 203.2 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4297aa76-fa98-48f1-a041-d3b8f0e02621")
-		(property "Reference" "#FRAME1"
-			(at 167.64 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Microcontroller and LED Driver"
-			(at 169.4129 196.6164 0)
-			(effects
-				(font
-					(size 2.54 2.159)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 167.64 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 167.64 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project ""
-				(path "/16b9eaed-a45c-47c3-9b43-218c1e3b9c4a"
-					(reference "#FRAME1")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Placa_Driver_Alpha_2026-eagle-import:CAPACITOR_0402")
 		(at 167.64 63.5 0)
 		(unit 1)
